@@ -4,43 +4,67 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My portfolio</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
 </head>
 <body>
-    <header><h2>Contact Me</h2></header>
-    <a href="home.html">Home</a>
-    <a href="aboutme.html">About Me</a>
-    <a href="experience&skills.html">Experience & skills</a>
-    <a href="projects.html">Projects</a>
-    <hr>
-    <br>
-        <h3>Get in touch with me!</h3>
-    <br>
-    
-    <table>
-        
-        <tr>
-            <td>
-                <img src="images/phoneicon.png" alt="phone icon">+251900000000
-            </td>
-            <td>
-                <img src="images/gmailicon.png" alt="gmail icon">betheldereje5@gmail.com
-            </td>
+    <div class="container">
+        <nav class="navbar has-shadow">
+            <div class="navbar-brand">
+                <h2 class="is-size-2 title mt-3 mb-2 ml-6">Contact Me</h2>
             
+                <a class="navbar-burger" id="burger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </a>
+            </div>
 
-        <tr>
-            <td>
-                <img src="images/telegramicon.png" alt="telegram icon">@b_e_th_e_l
-            </td>
-            <td>
-                <img src="images/instagramicon.png" alt="instagram icon">@b_e_th_e_l
-            </td>
-            </tr>                
-            
-   
-    </table>
-    <br>
-    <footer>
-        <a href="contactme.html">Contact Me</a>
-    </footer>
+        </nav>
+
+        <div class="navbar-menu" id="nav-links">
+            <div class="navbar-end is-flex-direction-column">
+                <a class="navbar-item" href="./home.html">Home</a>
+                <a class="navbar-item" href="./aboutme.html">About Me</a>
+                <a class="navbar-item" href="./experience&skills.html">Experience & Skills</a>
+                <a class="navbar-item" href="./projects.html">Projects</a>
+            </div>
+        </div>
+
+        <br>
+            <h3 class="content is-medium ml-3">Get in touch with me!</h3>
+        <br>
+        
+        <div class="table ml-6">
+        
+            <table>
+                
+                <tr>
+                    <td>
+                        <img class="phoneicon mb-6" src="images/phoneicon.png" alt="phone icon" width="20px" height="10px">+251900000000
+                    </td>
+                    <td>
+                        <img class="gmailicon mb-6" src="images/gmailicon.png" alt="gmail icon" width="20px" height="10px">betheldereje5@gmail.com
+                    </td>
+                    
+
+                <tr>
+                    <td>
+                        <img class="telegramicon mb-6" src="images/telegramicon.png" alt="telegram icon" width="20px" height="10px">@b_e_th_e_l
+                    </td>
+                    <td>
+                        <img class="instagramicon mb-6" src="images/instagramicon.png" alt="instagram icon" width="20px" height="10px">@b_e_th_e_l
+                    </td>
+                    </tr>                
+                    
+        
+            </table>
+        </div>
+        <br>
+        <hr class="horizontal-line">
+        <footer>
+            <a href="contactme.html">Contact Me</a>
+        </footer>
+    </div>
+    <script src="index.js"></script>
 </body>
 </html>

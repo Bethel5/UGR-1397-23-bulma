@@ -4,36 +4,67 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My portfolio</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
 </head>
 <body>
-    <header><h2>Projects</h2></header>
-    <a href="home.html">Home</a>
-    <a href="aboutme.html">About Me</a>
-    <a href="experience&skills.html">Experience & skills</a>
-    <a href="contactme.html">Contact me</a>
-    <hr>
-    <div>
-    <figure>
-    <img src="images/project1flowershopwebsite.jpg" alt="flower shop website">
-        <figcaption>Jenstore Flower shop</figcaption></figure>
-    <br>
-    <figure>
-        <img src="images/project2coffeeshopwebsite.jpg" alt="coffee shop website">
-        <figcaption>Flavored Coffee</figcaption></figure>
-    <br>
-    <figure>
-        <img src="images/project3eventplannig.jpg" alt="event planning website">
-        <figcaption>Elevate Decor</figcaption></figure>
-    <br>
+    <div class="container">
+        <nav class="navbar has-shadow">
+            <div class="navbar-brand">
+                <h2 class="is-size-2 title mt-3 mb-2 ml-6">Projects</h2>
+            
+                <a class="navbar-burger" id="burger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </a>
+            </div>
+
+            
+        </nav>
+        
+        <div class="navbar-menu" id="nav-links">
+            <div class="navbar-end is-flex-direction-column">
+                <a class="navbar-item" href="./home.html">Home</a>
+                <a class="navbar-item" href="./aboutme.html">About Me</a>
+                <a class="navbar-item" href="./experience&skills.html">Experience & Skills</a>
+                <a class="navbar-item" href="./Contactme.html">Contact me</a>
+            </div>
+        </div>
+        
+        <div class="columns is-flex is-flex-tablet is-flex-desktop">
+            <div class="column is-vcentered custom-gap">
+                <figure class="img">
+                    <img class="project1 pr-2 pl-2 mt-6" src="images/project1flowershopwebsite.jpg" alt="flower shop website" width="150px" height="300px">
+                    <figcaption class="content is-6 py-3 mb-6">Jenstore Flower shop</figcaption>
+                </figure>
+
+                <figure class="img">
+                    <img class="project2 pr-2 pl-2 mt-6" src="images/project2coffeeshopwebsite.jpg" alt="coffee shop website" width="150px" height="300px">
+                    <figcaption class="content is-6 py-3">Flavored Coffee</figcaption>
+                </figure>
+            </div>
+            
+            <div class="columns is-vcentered is-justify-content-center is-align-items-flex-end custom-gap">
+                <div class="column">
+                    <figure class="img">
+                        <img class="project3 pr-2 pl-2 mt-6" src="images/project3eventplannig.jpg" alt="event planning website" width="150px" height="300px">
+                        <figcaption class="content is-6 py-3">Elevate Decor</figcaption>
+                    </figure>
+                    <div class="youtube-vid pr-2 pl-2">    
+                        <figure>
+                            <iframe class="video" src="https://www.youtube.com/embed/Mi0ZWuecT0Q?si=rYMR4hcV-ciAatKu" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen width="150px" height="300px"></iframe>
+                            <figcaption class="content is-6 py-3">Avis car rental</figcaption>
+                        </figure>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <hr class="horizontal-line">            
+        <footer>
+            <a href="contactme.html">Contact Me</a>
+        </footer>
     </div>
-    <div>
-    <figure>
-        <iframe src="https://www.youtube.com/embed/Mi0ZWuecT0Q?si=rYMR4hcV-ciAatKu" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-        <figcaption>Avis car rental</figcaption></figure>
-                   
-    </div>
-    <footer>
-        <a href="contactme.html">Contact Me</a>
-    </footer>
+    <script src="index.js"></script>
 </body>
 </html>

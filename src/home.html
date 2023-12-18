@@ -4,26 +4,66 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My portfolio</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
 </head>
 <body>
-   <header><h2>Home</h2></header>
-   <a href="aboutme.html">About Me</a>
-   <a href="experience&skills.html">Experience & Skills</a>
-   <a href="projects.html">Projects</a>
-   <a href="contactme.html">Contact me</a>
-   <hr>
-   <img src="images/photo1.jpg" alt= "animated photo">
-   <br>
-   <audio controls>
-        <source src="images/hello-female-friendly-professional-87141.mp3" type="audio/mp3">
-   </audio>
-   <p>Hello, I'm Bethel.</p>
-   <p>I'm a web designer and developer.</p>
-   <q>Little achievements lead to big results.</q>
-   
-   <footer>
-    <a href="contactme.html">Contact Me</a>
-   </footer>
-   
+    <div class="container">
+        <nav class="navbar has-shadow">
+            <div class="navbar-brand">
+                <h2 class="is-size-2 title mt-3 mb-2 ml-6">Home</h2>
+            
+                <a class="navbar-burger" id="burger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </a>
+            </div>
+
+        </nav>
+
+        <div class="navbar-menu" id="nav-links">
+            <div class="navbar-end is-flex-direction-column">
+                <a class="navbar-item" href="./Aboutme.html">About me</a>
+                <a class="navbar-item" href="./experience&skills.html">Experience & Skills</a>
+                <a class="navbar-item" href="./projects.html">Projects</a>
+                <a class="navbar-item" href="./Contactme.html">Contact me</a>
+            </div>
+        </div>
+        
+        <div class="columns is-vcentered">
+            
+                <div class="column has-text-centered">
+                    <img class="photo1 mt-3" src="images/photo1.jpg" alt= "animated photo" width="200px" height="400px">
+                
+                </div>
+
+                <div class="column has-text-centered">
+                    <div class="audio-intro">
+                
+                        <br>
+                        
+                        <audio controls>
+                            <source src="images/hello-female-friendly-professional-87141.mp3" type="audio/mp3">
+                        </audio>
+                
+                        <div class="intro">
+                        <p class="content is-6 pr-2 pl-2">Hello, I'm Bethel.</p>
+                        <p class="content is-6 pr-2 pl-2">I'm a web designer and developer.</p>
+                        <q class="content is-6 pr-2 pl-2">Little achievements lead to big results.</q>
+                        </div>
+                    </div>
+                </div>
+                <br>
+            
+        </div>
+
+        
+        <br>
+        <hr class="horizontal-line">
+            <footer class="foot is-medium">
+                <a href="contactme+.html">Contact Me</a>
+            </footer>
+    </div>
+    <script src="index.js"></script>
 </body>
 </html>
